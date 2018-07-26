@@ -6,6 +6,8 @@ There are 3 styles currently available to use.
 
 Check out Demo to see all the styles.
 
+**Not compitable with mobile devices.**
+
 ## [Demo] (https://daksh7011.com/demo/neptune/)
 
 # [Changelog] (CHANGELOG)
