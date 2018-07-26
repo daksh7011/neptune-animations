@@ -576,7 +576,7 @@
     transform: translate(0, 0);
     opacity: 0.8;
 }
-/*style-five*/  
+/*style-five*/
 .style-five {
   position: relative;
   float: left;
@@ -658,4 +658,86 @@ background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, F
 .style-five.hover i {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+/*style-six*/
+.style-six {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.style-six *,
+.style-six *:before,
+.style-six *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.style-six:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  content: '';
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.style-six img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.style-six .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.style-six a {
+  margin: 2px;
+  opacity: 0;
+  text-decoration: none;
+}
+.style-six a i {
+  display: block;
+  font-size: 15px;
+  line-height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+.style-six a i:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.style-six a:first-of-type {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.style-six a:last-of-type {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.style-six:hover:before,
+.style-six.hover:before {
+  opacity: 0.5;
+}
+.style-six:hover a,
+.style-six.hover a {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
