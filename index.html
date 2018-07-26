@@ -24,6 +24,20 @@
         <!-- Stylesheet -->
         <link href="css/css-animations.css" rel="stylesheet">
 
+        <!-- Redirection for Mobile Users -->
+        <!-- 1. Generic Devices -->
+        <script type="text/javascript">
+            if (screen.width <= 699) {
+                document.location = "http://daksh7011.com/demo/neptune/not-compitable.html";
+            }
+        </script>
+        <!-- 2. All iOS Devices -->
+        <script type="text/javascript">
+            navigator.userAgent.match(/iPhone|iPad|iPod/i) && (function(){
+                location.replace("http://daksh7011.com/demo/neptune/not-compitable.html");
+            }());
+        </script>
+
     </head>
 
     <body>
@@ -66,22 +80,26 @@
                     Hover over demos below to see effects.
                 </h4>
                 <p class="text-left">
+                    <i class="fa fa-warning"></i>
+                    Not supported on mobile devices.
+                </p>
+                <p class="text-left">
                     <b>
                         Project is Proudly <a href="https://gitlab.com/daksh7011/neptune-animations">Open-Source <i class="fa fa-gitlab"></i></a>
                     </b>
                 </p>
+                <div style="text-align: center;">
+                    <a href="#style-one" class="js-scroll-trigger toBottom">
+                        <span class="scroll-btn toBottom">
 
-            </div>
-            <a href="#style-one" class="js-scroll-trigger">
-                <span class="scroll-btn toBottom">
-
-                    <span class="mouse">
-                        <span>
+                            <span class="mouse">
+                                <span>
+                                </span>
+                            </span>
                         </span>
-                    </span>
-
-                </span>
-            </a>
+                    </a>
+                </div>
+            </div>
             <div class="overlay"></div>
         </header>
 
@@ -190,7 +208,7 @@
                         <figure class="style-three">
                             <img src="img/1.jpg" alt="sample28" />
                             <figcaption>
-                                <div><i class="icon-mouse"></i></div>
+                                <div><i class="icon-heart"></i></div>
                             </figcaption>
                             <a href="#"></a>
                         </figure>
@@ -208,12 +226,49 @@
                         <figure class="style-three">
                             <img src="img/3.jpg" alt="sample28" />
                             <figcaption>
-                                <div><i class="icon-mouse"></i></div>
+                                <div><i class="icon-link"></i></div>
                             </figcaption>
                             <a href="#"></a>
                         </figure>
                     </div>
 
+                </div>
+            </div>
+        </section>
+        <!-- style four -->
+        <section class="content-section" id="style-four">
+            <div class="container">
+                <div class="content-section-heading text-center">
+                    <h3 class="mb-3">style four</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <figure class="style-four">
+                            <img src="img/1.jpg" alt="sample28" />
+                            <figcaption>
+                                <div><i class="icon-plus"></i></div>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="style-four">
+                            <img src="img/2.jpg" alt="sample28" />
+                            <figcaption>
+                                <div><i class="icon-link"></i></div>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="style-four">
+                            <img src="img/3.jpg" alt="sample28" />
+                            <figcaption>
+                                <div><i class="icon-eye"></i></div>
+                            </figcaption>
+                            <a href="#"></a>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
