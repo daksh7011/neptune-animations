@@ -576,3 +576,86 @@
     transform: translate(0, 0);
     opacity: 0.8;
 }
+/*style-five*/  
+.style-five {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 3px solid #34495e;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.style-five *,
+.style-five *:before,
+.style-five *:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.style-five img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.style-five i {
+  position: absolute;
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 28px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(100%, -100%);
+  transform: translate(100%, -100%);
+}
+
+.style-five i:after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 75px 75px 0;
+  border-color: transparent #34495e transparent;
+  z-index: -1;
+}
+
+.style-five a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.style-five:hover img,
+.style-five.hover img {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.style-five:hover i,
+.style-five.hover i {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
