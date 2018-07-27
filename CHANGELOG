@@ -20,3 +20,13 @@
 
 27/07/2018 (Siddhi)
     -Added sixth style.
+
+27/07/2018 (Siddhi)
+    -Added 4 styles.
+    -Updated Index Page.
+
+27/07/2018 (Daksh)
+    -Added 5 new Styles.
+    -Split the animation css in 3 parts for small sized files instead of loading big one.
+    -Updated Index, Changelog and Readme.
+    -Fixed indentation of files.
