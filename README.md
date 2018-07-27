@@ -2,11 +2,11 @@
 
 Neptune Animations is a CSS animation library for web elements.
 
-There are 6 styles currently available to use.
+There are 15 styles currently available to use.
 
 Check out Demo to see all the styles.
 
-**Not compitable with mobile devices.**
+**Warning: This library is not compitable with mobile devices.**
 
 ## [Demo] (https://daksh7011.com/demo/neptune/)
 
