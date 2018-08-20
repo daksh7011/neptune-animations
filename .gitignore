@@ -3,10 +3,10 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
-/.idea/*
-/assets/css/animations/neptune-1.css
-/assets/css/animations/neptune-2.css
-/assets/css/animations/neptune-3.css
-/assets/css/animations/neptune-4.css
-/assets/css/animations/neptune-5.css
-/assets/css/animations/neptune-min.css
+.idea/*
+assets/css/animations/neptune-1.css
+assets/css/animations/neptune-2.css
+assets/css/animations/neptune-3.css
+assets/css/animations/neptune-4.css
+assets/css/animations/neptune-5.css
+assets/css/animations/neptune-min.css
