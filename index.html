@@ -26,18 +26,7 @@
     <link href="assets/css/animations/neptune.min.css" rel="stylesheet">
 
     <!-- Redirection for Mobile Users -->
-    <!-- 1. Generic Devices -->
-    <script type="text/javascript">
-        if (screen.width <= 699) {
-            document.location = "http://daksh7011.com/demo/neptune/not-compitable.html";
-        }
-    </script>
-    <!-- 2. All iOS Devices -->
-    <script type="text/javascript">
-        navigator.userAgent.match(/iPhone|iPad|iPod/i) && (function(){
-            location.replace("http://daksh7011.com/demo/neptune/not-compitable.html");
-        }());
-    </script>
+    <script src="assets/js/mobile-redirection.js"></script>
 
     <!--Loading syntax highlighter to show codes in efficient manner-->
     <link rel="stylesheet" href="assets/highlight/styles/darcula.css">
@@ -92,16 +81,14 @@
 
 <main role="main">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
             <h3 class="display-4">Neptune - CSS Hover Animations Library</h3>
             <p>This project is aimed to provide unique and attractive hover animations. <br>
                 This library works with all the image sizes. <br>
-                However this library not supported on mobile devices. <br>
                 Being Open-Source it is dedicated to community and purely written in CSS</p>
             <p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">
+                <a class="btn btn-primary btn-lg" href="https://gitlab.com/daksh7011/neptune-animations" role="button">
                     <i class="fab fa-gitlab"></i> Gitlab Repository
                 </a>
             </p>
@@ -110,11 +97,10 @@
 
     <div class="container">
         <!-- Example row of columns -->
-
+        <div class="alert alert-warning" role="alert">
+            This library does not works on mobile devices.
+        </div>
         <div class="row">
-            <div class="alert alert-warning" role="alert">
-                Style One to Style 10 Needs <code>neptune-1.css</code> file to load animation
-            </div>
             <div class="col-md-6">
                 <div class="card" style="padding: 1%;">
                     <section>
@@ -204,12 +190,13 @@
     <div class="footer" style="display: flex; justify-content: space-around">
         <!-- Left -->
         <div>
-            <p class="text-center">Made with <span style="color:#F62459"><i class="fa fa-heart"></i></span> in India</p>
+            <p class="text-center"><strong>Made with <span style="color:#F62459"><i class="fa fa-heart"></i></span>
+                in India</strong></p>
         </div>
         <!-- Middle -->
         <div>
             <p class="text-center">
-                Library preview build on <a href="https://getbootstrap.com">Bootstrap4</a>
+                Library showcase built on <strong><a href="https://getbootstrap.com">Bootstrap4</a></strong>
             </p>
         </div>
         <!-- Right -->
