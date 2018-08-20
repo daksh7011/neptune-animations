@@ -1,12 +1,16 @@
-# Neptune Animations - Animations CSS Library
+# Neptune - CSS Hover Animations Library
 
 Neptune Animations is a CSS animation library for web elements.
 
-There are 20 styles currently available to use.
+There are 21 styles currently available to use.
 
 Check out Demo to see all the styles.
 
-**Warning: This library is not compitable with mobile devices.**
+## Usage
+usage guide is coming soon with newer showcase and optimized version 
+of Neptune Animations.
+
+**Warning: This library is not compilable with mobile devices.**
 
 ## [Demo] (https://daksh7011.com/demo/neptune/)
 
