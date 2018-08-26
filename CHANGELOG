@@ -42,3 +42,8 @@
     -Minified CSS to reduce load time
     -Added normalize.css to normalize content
     -Added highlight.js to highlight code snippets
+
+27/08/2018
+    -Separated Showcase and removed unnecessary files
+    -Removed showcase from index page.
+    -Added 2 Javascript files for mobile redirection and usage code snippets.
