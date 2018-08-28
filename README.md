@@ -6,17 +6,18 @@ There are 21 styles currently available to use.
 
 Check out Demo to see all the styles.
 
+## [Demo](https://daksh7011.com/neptune/)
+
 ## Usage
-usage guide is coming soon with newer showcase and optimized version 
-of Neptune Animations.
+Open Demo and then head to the showcase section for usage guidelines and ready made usage codes.
 
 **Warning: This library is not compilable with mobile devices.**
 
-## [Demo] (https://daksh7011.com/demo/neptune/)
 
-# [Changelog] (CHANGELOG)
 
-# [Contribution guideline for this project] (CONTRIBUTING.md)
+# [Changelog](CHANGELOG)
+
+# [Contribution guideline for this project](CONTRIBUTING.md)
 
 # License
 
