@@ -8,11 +8,11 @@ Check out Demo to see all the styles.
 
 **Warning: This library is not compitable with mobile devices.**
 
-## [Demo] (https://daksh7011.com/demo/neptune/)
+## [Demo](https://daksh7011.com/demo/neptune/)
 
-# [Changelog] (CHANGELOG)
+# [Changelog](CHANGELOG)
 
-# [Contribution guideline for this project] (CONTRIBUTING.md)
+# [Contribution guideline for this project](CONTRIBUTING.md)
 
 # License
 
