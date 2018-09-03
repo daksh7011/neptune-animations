@@ -11,1040 +11,134 @@
     <title>Neptune - Animated Hover CSS Library</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!--Normalize CSS-->
+    <link href="assets/css/normalize.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/layout.css" rel="stylesheet">
+    <!-- FontsAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous">
+
 
     <!-- Stylesheet -->
-    <link href="css/css-animations1.css" rel="stylesheet">
-    <link href="css/css-animations2.css" rel="stylesheet">
-    <link href="css/css-animations3.css" rel="stylesheet">
-	<link href="css/css-animations4.css" rel="stylesheet">
-	<link href="css/css-animations5.css" rel="stylesheet">
+    <link href="assets/css/animations/neptune.min.css" rel="stylesheet">
 
     <!-- Redirection for Mobile Users -->
-    <!-- 1. Generic Devices -->
-    <script type="text/javascript">
-        if (screen.width <= 699) {
-            document.location = "http://daksh7011.com/demo/neptune/not-compitable.html";
+    <script src="assets/js/mobile-redirection.js"></script>
+
+    <!--Loading syntax highlighter to show codes in efficient manner-->
+    <link rel="stylesheet" href="assets/highlight/styles/darcula.css">
+    <script src="assets/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--Clipboard Function-->
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
         }
-    </script>
-    <!-- 2. All iOS Devices -->
-    <script type="text/javascript">
-        navigator.userAgent.match(/iPhone|iPad|iPod/i) && (function(){
-            location.replace("http://daksh7011.com/demo/neptune/not-compitable.html");
-        }());
+
     </script>
 
 </head>
 
 <body>
-<!-- Header -->
-<div id="page-top"></div>
-<header class="masterhead d-flex">
-    <div class="container text-left my-auto">
-        <h1 class="mb-1">Neptune</h1>
-        <h3 class="mb-5">
-            Neptune - Animated Hover CSS Library
-        </h3>
-        <h4 class="mb-6">
-            Hover over demos below to see effects.
-        </h4>
-        <p class="text-left">
-            <i class="fa fa-warning"></i>
-            Not supported on mobile devices.
-        </p>
-        <p class="text-left">
-            <b>
-                Project is Proudly <a href="https://gitlab.com/daksh7011/neptune-animations">Open-Source <i class="fa fa-gitlab"></i></a>
-            </b>
-        </p>
-        <div style="text-align: center;">
-            <a href="#style-one" class="js-scroll-trigger toBottom">
-          <span class="scroll-btn toBottom">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Neptune Animations</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <span class="mouse">
-              <span>
-              </span>
-            </span>
-          </span>
-            </a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./showcase">Showcase</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMain" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Other Projects</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMain">
+                    <a class="dropdown-item" href="https://gitlab.com/daksh7011/username-checker">Username Checker</a>
+                    <a class="dropdown-item" href="https://gitlab.com/daksh7011/404-templates">404 Templates</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://daksh7011.com">Meet Maintainer</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h3 class="display-4">Neptune - CSS Hover Animations Library</h3>
+            <p>This project is aimed to provide unique and attractive hover animations. <br>
+                This library works with all the image sizes. <br>
+                Being Open-Source it is dedicated to community and purely written in CSS</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="https://gitlab.com/daksh7011/neptune-animations" role="button">
+                    <i class="fab fa-gitlab"></i> Gitlab Repository
+                </a>
+            </p>
         </div>
     </div>
-    <div class="overlay"></div>
-</header>
 
-<!-- style one -->
-<section class="content-section" id="style-one">
     <div class="container">
-        <div class="content-section-heading text-right">
-            <h3 class="mb-3">style one</h3>
-        </div>
+        <!-- Example row of columns -->
         <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-one">
-                    <img src="img/1.jpg" alt="sq-sample14" />
-                    <figcaption>
-                        <div>
-                            <h2>Stars</h2>
-                            <h4>Caption</h4>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-one">
-                    <img src="img/2.jpg" alt="sq-sample14" />
-                    <figcaption>
-                        <div>
-                            <h2>Squirrel</h2>
-                            <h4>Caption</h4>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-one">
-                    <img src="img/3.jpg" alt="sq-sample14" />
-                    <figcaption>
-                        <div>
-                            <h2>Fox</h2>
-                            <h4>Caption</h4>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
+            will be updated
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+    <div class="footer" style="display: flex; justify-content: space-around">
+        <!-- Left -->
+        <div>
+            <p class="text-center"><strong>Made with <span style="color:#F62459"><i class="fa fa-heart"></i></span>
+                in India</strong></p>
+        </div>
+        <!-- Middle -->
+        <div>
+            <p class="text-center">
+                Library showcase built on <strong><a href="https://getbootstrap.com">Bootstrap4</a></strong>
+            </p>
+        </div>
+        <!-- Right -->
+        <div>
+            <p class="text-center">
+                <b>
+                    Proudly <a href="https://gitlab.com/daksh7011/neptune-animations">
+                    Open-Source <i class="fab fa-gitlab"></i></a>
+                </b>
+            </p>
         </div>
     </div>
-</section>
-
-
-<!-- style two -->
-<section class="content-section" id="style-two">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style two</h3>
-        </div>
-        <div class="row"><div class="col-sm-4">
-            <figure class="style-two">
-                <img src="img/1.jpg" alt="sq-sample14" />
-                <figcaption>
-                    <div>
-                        <h2>Stars</h2>
-                        <h4>Caption</h4>
-                    </div>
-                </figcaption>
-                <a href="#"></a>
-            </figure>
-        </div>
-            <div class="col-sm-4">
-                <figure class="style-two">
-                    <img src="img/2.jpg" alt="sq-sample14" />
-                    <figcaption>
-                        <div>
-                            <h2>Squirrel</h2>
-                            <h4>Caption</h4>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-two">
-                    <img src="img/3.jpg" alt="sq-sample14" />
-                    <figcaption>
-                        <div>
-                            <h2>Fox</h2>
-                            <h4>Caption</h4>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style three -->
-<section class="content-section" id="style-three">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style three</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-three">
-                    <img src="img/1.jpg" alt="sample28" />
-                    <figcaption>
-                        <div><i class="icon-heart"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-three">
-                    <img src="img/2.jpg" alt="sample28" />
-                    <figcaption>
-                        <div><i class="icon-mouse"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-three">
-                    <img src="img/3.jpg" alt="sample28" />
-                    <figcaption>
-                        <div><i class="icon-link"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- style four -->
-<section class="content-section" id="style-four">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style four</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-four">
-                    <img src="img/1.jpg" alt="sample28" />
-                    <figcaption>
-                        <div><i class="icon-plus"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-four">
-                    <img src="img/2.jpg" alt="sample28" />
-                    <figcaption>
-                        <div><i class="icon-link"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-four">
-                    <img src="img/3.jpg" alt="sample28" />
-                    <figcaption>
-                        <div><i class="icon-eye"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- style five -->
-<section class="content-section" id="style-five">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style five</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-five">
-                    <img src="img/1.jpg"  />
-                    <i class="icon-star"></i>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-five">
-                    <img src="img/2.jpg"  />
-                    <i class="icon-star"></i>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-five">
-                    <img src="img/3.jpg"  />
-                    <i class="icon-star"></i>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style six -->
-<section class="content-section" id="style-six">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style six</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-six">
-                    <img src="img/1.jpg"  />
-                    <div class="icons">
-                        <a href="#"><i class="icon-social-facebook"></i></a>
-                        <a href="#"><i class="icon-social-tumblr"></i></a>
-                        <a href="#"><i class="icon-social-twitter"></i></a>
-                    </div>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-six">
-                    <img src="img/2.jpg"  />
-                    <div class="icons">
-                        <a href="#"><i class="icon-social-facebook"></i></a>
-                        <a href="#"><i class="icon-social-tumblr"></i></a>
-                        <a href="#"><i class="icon-social-twitter"></i></a>
-
-                    </div>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-six">
-                    <img src="img/3.jpg"  />
-                    <div class="icons">
-                        <a href="#"><i class="icon-social-facebook"></i></a>
-                        <a href="#"><i class="icon-social-tumblr"></i></a>
-                        <a href="#"><i class="icon-social-twitter"></i></a>
-
-                    </div>
-                </figure>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style seven -->
-<section class="content-section" id="style-Seven">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style seven</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-seven">
-                    <img src="img/1.jpg"  />
-                    <div class="icons">
-                        <a href="#"><i class="icon-social-facebook"></i></a>
-                        <a href="#"><i class="icon-social-tumblr"></i></a>
-                        <a href="#"><i class="icon-social-twitter"></i></a>
-
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-seven">
-                    <img src="img/2.jpg"  />
-                    <div class="icons">
-                        <a href="#"><i class="icon-social-facebook"></i></a>
-                        <a href="#"><i class="icon-social-tumblr"></i></a>
-                        <a href="#"><i class="icon-social-twitter"></i></a>
-
-                    </div>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-seven">
-                    <img src="img/3.jpg"  />
-                    <div class="icons">
-                        <a href="#"><i class="icon-social-facebook"></i></a>
-                        <a href="#"><i class="icon-social-tumblr"></i></a>
-                        <a href="#"><i class="icon-social-twitter"></i></a>
-
-                    </div>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style eight -->
-<section class="content-section" id="style-eight">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style eight</h3>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-4">
-                <figure class="style-eight">
-                    <img src="img/1.jpg"  />
-                    <figcaption>
-                        <div><i class="icon-cursor"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-eight">
-                    <img src="img/2.jpg"  />
-                    <figcaption>
-                        <div><i class="icon-cursor"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-eight">
-                    <img src="img/3.jpg"  />
-                    <figcaption>
-                        <div><i class="icon-cursor"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style nine -->
-<section class="content-section" id="style-NiNe">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style nine</h3>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-4">
-                <figure class="style-nine">
-                    <img src="img/1.jpg"  />
-                    <figcaption>
-                        <h2>Siddhi</h2>
-                        <h3>UX Designer</h3>
-                        <p>"making this library amazing piece of art."</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-nine">
-                    <img src="img/2.jpg"  />
-                    <figcaption>
-                        <h2>Squirrel</h2>
-                        <h3>Nut Breaker</h3>
-                        <p>"breaking nuts since ice-age"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-nine">
-                    <img src="img/3.jpg"  />
-                    <figcaption>
-                        <h2>Mr. Fox</h2>
-                        <h3>Clever Guy</h3>
-                        <p>"using his wit to overcome dangers"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style ten -->
-<section class="content-section" id="style-TEN">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style ten</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-ten">
-                    <img src="img/1.jpg"  />
-                    <figcaption>
-                        <h3>Siddhi</h3>
-                        <p>"making this library amazing piece of art."</p>
-                    </figcaption><i class="icon-plus"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-ten">
-                    <img src="img/2.jpg"  />
-                    <figcaption>
-                        <h3>Squirrel</h3>
-                        <p>"breaking nuts since ice-age"</p>
-                    </figcaption><i class="icon-plus"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-ten">
-                    <img src="img/3.jpg"  />
-                    <figcaption>
-                        <h3>Mr. Fox</h3>
-                        <p>"using his wit to overcome dangers"</p>
-                    </figcaption><i class="icon-plus"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- style eleven -->
-<section class="content-section" id="style-eleven">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style eleven</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-eleven">
-                    <img src="img/1.jpg" alt="sample31" />
-                    <figcaption>
-                        <h2>Siddhi</h2>
-                        <h3>UX Designer</h3>
-                        <p>making this library amazing piece of art.</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style eleven -->
-                <figure class="style-eleven">
-                    <img src="img/2.jpg" alt="sample31" />
-                    <figcaption>
-                        <h2>Squirrel</h2>
-                        <h3>Nut Breaker</h3>
-                        <p>breaking nuts since ice-age</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style eleven -->
-                <figure class="style-eleven">
-                    <img src="img/3.jpg" alt="sample31" />
-                    <figcaption>
-                        <h2>Mr. Fox</h2>
-                        <h3>Clever Guy</h3>
-                        <p>"using his wit to overcome dangers"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- style twelve -->
-<section class="content-section" id="style-twelve">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style twelve</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-twelve">
-                    <img src="img/1.jpg" alt="sample31" />
-                    <figcaption>
-                        <h3>Siddhi</h3>
-                        <p>"making this library amazing piece of art."</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-twelve">
-                    <img src="img/2.jpg" alt="sample31" />
-                    <figcaption>
-                        <h3>Squirrel</h3>
-                        <p>"breaking nuts since ice-age"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-twelve">
-                    <img src="img/3.jpg" alt="sample31" />
-                    <figcaption>
-                        <h3>Mr. Fox</h3>
-                        <p>"using his wit to overcome dangers"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- style-thirteen -->
-<section class="content-section" id="style-thirteen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style Thirteen</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-thirteen">
-                    <img src="img/1.jpg" alt="sample32" />
-                    <i class="icon-star"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-thirteen">
-                    <img src="img/2.jpg" alt="sample32" />
-                    <i class="icon-star"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-thirteen">
-                    <img src="img/3.jpg" alt="sample32" />
-                    <i class="icon-star"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- style-Fourteen -->
-<section class="content-section" id="styleFourteen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style Fourteen</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <!-- style Fourteen -->
-                <figure class="style-fourteen">
-                    <figcaption>
-                        <h3>Siddhi</h3>
-                        <p>"making this library amazing piece of art."</p>
-                    </figcaption>
-                    <a href="#"></a>
-                    <img src="img/1.jpg" alt="sample45" />
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style Fourteen -->
-                <figure class="style-fourteen">
-                    <figcaption>
-                        <h3>Squirrel</h3>
-                        <p>"breaking nuts since ice-age"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                    <img src="img/2.jpg" alt="sample45" />
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style Fourteen -->
-                <figure class="style-fourteen">
-                    <figcaption>
-                        <h3>Mr. Fox</h3>
-                        <p>"using his wit to overcome dangers"</p>
-                    </figcaption>
-                    <a href="#"></a>
-                    <img src="img/3.jpg" alt="sample45" />
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- style-fifteen -->
-<section class="content-section" id="stylefifteen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style-fifteen</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-fifteen">
-                    <div class="image">
-                        <img src="img/1.jpg" alt="sample97" /></div>
-                    <figcaption>
-                        <h4>Stars</h4>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-fifteen">
-                    <div class="image">
-                        <img src="img/2.jpg" alt="sample97" /></div>
-                    <figcaption>
-                        <h4>Squirrel</h4>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-fifteen">
-                    <div class="image">
-                        <img src="img/3.jpg" alt="sample97" /></div>
-                    <figcaption>
-                        <h4>Fox</h4>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- style-sixteen -->
-<section class="content-section" id="stylesixteen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style sixteen</h3>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-4">
-                <!-- style sixteen -->
-                <figure class="style-sixteen">
-                    <img src="img/1.jpg" alt="sample36" />
-                    <figcaption>
-                        <h3>Stars</h3>
-                    </figcaption><i class="icon-plus"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style sixteen -->
-                <figure class="style-sixteen">
-                    <img src="img/2.jpg" alt="sample36" />
-                    <figcaption>
-                        <h3>Squirrel</h3>
-                    </figcaption><i class="icon-plus"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style sixteen -->
-                <figure class="style-sixteen">
-                    <img src="img/3.jpg" alt="sample36" />
-                    <figcaption>
-                        <h3>Fox</h3>
-                    </figcaption><i class="icon-plus"></i>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- style-seventeen -->
-<section class="content-section" id="styleseventeen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style-seventeen</h3>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-4">
-                <!-- style-seventeen -->
-                <figure class="style-seventeen">
-                    <img src="img/1.jpg" alt="sq-sample36" />
-                    <figcaption><i class="icon-screen-tablet"></i>
-                        <h4>Stars</h4>
-                        <h2>Amazing View</h2>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style-seventeen -->
-                <figure class="style-seventeen">
-                    <img src="img/2.jpg" alt="sq-sample36" />
-                    <figcaption><i class="icon-event"></i>
-                        <h4>Squirrel</h4>
-                        <h2>Nut Cracker</h2>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <!-- style-seventeen -->
-                <figure class="style-seventeen">
-                    <img src="img/3.jpg" alt="sq-sample36" />
-                    <figcaption><i class="icon-close"></i>
-                        <h4>Fox</h4>
-                        <h2>Clever Guy</h2>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- style-eighteen -->
-<section class="content-section" id="styleeighteen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style-eighteen</h3>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-4">
-                <figure class="style-eighteen">
-                    <img src="img/1.jpg" alt="sample38" />
-                    <div class="title">
-                        <div>
-                            <h2>Siddhi</h2>
-                            <h4>UX Designer</h4>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <p>making this library amazing piece of art.</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-eighteen">
-                    <img src="img/2.jpg" alt="sample38" />
-                    <div class="title">
-                        <div>
-                            <h2>Squirrel</h2>
-                            <h4>Nut Cracker</h4>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <p>breaking nuts since ice-age</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-eighteen">
-                    <img src="img/3.jpg" alt="sample38" />
-                    <div class="title">
-                        <div>
-                            <h2>Fox</h2>
-                            <h4>Claver Guy</h4>
-                        </div>
-                    </div>
-                    <figcaption>
-                        <p>using his wit to overcome dangers</p>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- style-nineteen -->
-<section class="content-section" id="stylenineteen">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style  nineteen</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-nineteen">
-                    <img src="img/1.jpg" alt="sample36" />
-                    <figcaption>
-                        <div><i class="icon-screen-tablet"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-nineteen">
-                    <img src="img/2.jpg" alt="sample36" />
-                    <figcaption>
-                        <div><i class="icon-screen-tablet"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-nineteen">
-                    <img src="img/3.jpg" alt="sample36" />
-                    <figcaption>
-                        <div><i class="icon-screen-tablet"></i></div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- style-twenty -->
-<section class="content-section" id="style-twenty">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="mb-3">style twenty</h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="style-twenty">
-                    <img src="img/1.jpg" alt="sample88" />
-                    <figcaption>
-                        <div>
-                            <h2>Siddhi</h2>
-                        </div>
-                        <div>
-                            <h3>UX Designer</h3>
-                            <div class="icons">
-                                <a href="#"><i class="icon-social-facebook"></i></a>
-                                <a href="#"><i class="icon-social-tumblr"></i></a>
-                                <a href="#"><i class="icon-social-twitter"></i></a>
-
-                            </div>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-twenty">
-                    <img src="img/2.jpg" alt="sample88" />
-                    <figcaption>
-                        <div>
-                            <h2>Squirrel</h2>
-                        </div>
-                        <div>
-                            <h3>Nut Breaker</h3>
-                            <div class="icons">
-                                <a href="#"><i class="icon-social-facebook"></i></a>
-                                <a href="#"><i class="icon-social-tumblr"></i></a>
-                                <a href="#"><i class="icon-social-twitter"></i></a>
-
-                            </div>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-            <div class="col-sm-4">
-                <figure class="style-twenty">
-                    <img src="img/3.jpg" alt="sample88" />
-                    <figcaption>
-                        <div>
-                            <h2>Fox</h2>
-                        </div>
-                        <div>
-                            <h3>Clever Guy</h3>
-                            <div class="icons">
-                                <a href="#"><i class="icon-social-facebook"></i></a>
-                                <a href="#"><i class="icon-social-tumblr"></i></a>
-                                <a href="#"><i class="icon-social-twitter"></i></a>
-
-                            </div>
-                        </div>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>
-
-        </div>
-    </div>
-</section>
-	<!-- style twentyone -->
-		<section class="content-section" id="style-twentyone">
-			<div class="container">
-				<div class="content-section-heading text-center">
-					<h3 class="mb-3">style twentyone</h3>
-				</div>
-				<div class="row">
-					<div class="col-sm-4">
-						<figure class="style-twentyone">
-							<img src="img/1.jpg" alt="sample2" />
-							<figcaption>
-								<h2>Siddhi</h2>
-								<p>"making this library amazing piece of art."</p>
-							</figcaption>
-							<a href="#"></a>
-						</figure>
-					</div>
-					<div class="col-sm-4">
-						<figure class="style-twentyone">
-							<img src="img/2.jpg" alt="sample2" />
-							<figcaption>
-								<h2>Squirrel</h2>
-								<p>"breaking nuts since ice-age"</p>
-							</figcaption>
-							<a href="#"></a>
-						</figure>
-					</div>
-					<div class="col-sm-4">
-						<figure class="style-twentyone">
-							<img src="img/3.jpg" alt="sample2" />
-							<figcaption>
-								<h2>Mr. Fox</h2>
-								<p>"using his wit to overcome dangers"</p>
-							</figcaption>
-							<a href="#"></a>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-<!-- Footer -->
-
-<div class="footer" style="display: flex; justify-content: space-around">
-    <!-- Left -->
-    <div>
-        <p  style="text-align:center">Made with <i class="fa fa-heart"></i> in India</p>
-    </div>
-    <!-- Middle -->
-    <div>
-        <!-- blank middle portion -->
-    </div>
-    <!-- Right -->
-    <div>
-        <p style="text-align:center;">
-            <b>
-                Proudly <a href="https://gitlab.com/daksh7011/neptune-animations">Open-Source <i class="fa fa-gitlab"></i></a>
-            </b>
-        </p>
-    </div>
-</div>
-
-
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top js-scroll-trigger" href="#page-top">
-    <i class="fa fa-angle-up"></i>
-</a>
+</footer>
 
 
 <!-- Bootstrap core JavaScript -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-
-<!-- Custom script -->
-<script src="js/stylish-portfolio.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/alert.js"></script>
 
 </body>
 

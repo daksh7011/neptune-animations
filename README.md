@@ -1,14 +1,18 @@
-# Neptune Animations - Animations CSS Library
+# Neptune - CSS Hover Animations Library
 
 Neptune Animations is a CSS animation library for web elements.
 
-There are 20 styles currently available to use.
+**This project is being actively developed on [Gitlab.](https://gitlab.com/daksh7011/neptune-animations) 
+Github repo is just a mirror of original repo on Gitlab
+In addition this repo can be obsolete in compare to repo on gitlab.**
 
-Check out Demo to see all the styles.
+## [Demo](https://daksh7011.com/neptune/)
 
-**Warning: This library is not compitable with mobile devices.**
+## Usage
+Open Demo and then head to the showcase section for usage guidelines and ready made usage codes.
 
-## [Demo](https://daksh7011.com/demo/neptune/)
+**Warning: This library is not compilable with mobile devices.**
+
 
 # [Changelog](CHANGELOG)
 

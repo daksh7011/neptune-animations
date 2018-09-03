@@ -30,3 +30,26 @@
     -Split the animation css in 3 parts for small sized files instead of loading big one.
     -Updated Index, Changelog and Readme.
     -Fixed indentation of files.
+
+19/08/2018 (Daksh)
+    -Updated contribution guide
+    -changed layout of display
+
+21/08/2018
+    -Updated whole showcase with pure bootstrap4
+    -Changed the directory structure.
+    -Added two preview to showcase initially
+    -Minified CSS to reduce load time
+    -Added normalize.css to normalize content
+    -Added highlight.js to highlight code snippets
+
+27/08/2018
+    -Separated Showcase and removed unnecessary files
+    -Removed showcase from index page.
+    -Added 2 Javascript files for mobile redirection and usage code snippets.
+
+28/08/2018
+    -Added 6 new showcase preview
+    -Added usage codes for newly added previews
+    -Added images for showcase preview
+    -Changed demo link in readme file
